@@ -42,7 +42,22 @@ print("a \(a.count)")
 
 
 
-var 2dArray :[[Int]]()
+var twoDArray = [[Int]]()
+
+twoDArray.append([1,2,3])
+twoDArray.append([4,5,6])
+twoDArray.append([7,8,9])
+
+for row in twoDArray
+{
+    print("")
+    
+    for item in row
+    {
+        debugPrint(item, separator: "", terminator: "")
+        
+    }
+}
 
 
 
