@@ -38,7 +38,7 @@ var b = Array.init(repeating: 0, count: 5)
 a = a + [101, 102, 103]
 a = a + b
 print(a)
-print("a \(a.count)")
+print("Elements:---- \(a.count)")
 
 
 
@@ -54,10 +54,84 @@ for row in twoDArray
     
     for item in row
     {
-        debugPrint(item, separator: "", terminator: "")
+        print(item, separator: "", terminator: "")
         
     }
 }
+
+let s = "Swift"
+let i = s.index(s.startIndex, offsetBy: 4)
+print(s[i])
+
+
+
+//working with SET
+var countryName = Set<String>()
+countryName.insert("India")
+countryName.insert("USA")
+countryName.insert("Canada")
+countryName.insert("Nepal")
+countryName.insert("Russia")
+countryName.insert("Pak")
+countryName.insert("NewZealand")
+countryName.insert("Australia")
+countryName.insert("Dubai")
+
+print(countryName)
+
+countryName.insert("Nepal")
+
+print("----Sorted----")
+for country in countryName.sorted()
+{
+   
+    print(country)
+}
+
+
+//working with Dictionary
+
+
+//var dictCountry = Dictionary<Int, String>()
+
+//var dictCountry : [Int, String]()
+
+var dictCountry = [1: "USA", 2: "Canada"]
+
+
+//dictCountry.count
+dictCountry.updateValue("India", forKey: 4)
+dictCountry.updateValue("Russia", forKey: 3)
+dictCountry.updateValue("Nepal", forKey: 5)
+dictCountry.removeValue(forKey: 5)
+
+for item in dictCountry
+{
+ print(item.key, item.value, separator: "", terminator: "\n")
+}
+for (_,v)in dictCountry
+{
+    print(v, separator: "", terminator: "\n")
+}
+for v in dictCountry.values
+{
+    print(v, separator: "", terminator: "\n")
+}
+for k in dictCountry.keys
+{
+    print(k, separator: "", terminator: "\n")
+}
+for (k,v) in dictCountry
+{
+    print(k,v, separator: "", terminator: "\n")
+}
+
+
+
+
+
+
+
 
 
 
