@@ -128,8 +128,13 @@ for (k,v) in dictCountry
 
 
 
+func demo(a : Int, b : Int) -> Int
+{
+    return a+b;
+}
 
 
+print(demo(a: 10, b: 20))
 
 
 
